@@ -1,12 +1,5 @@
 SRI UB Manipulated Object Detector
 
-# Create project
-- make docker-image
-
-
-# Run Project
-- docker run -p port:port -v ~/dir:/mnt   -e COMPONENT_SPEC_FILE='component.yaml' image_id
-- semafor-test-harness probe  --host http://0.0.0.0:port sri.ub.manipulatedobjects ag/ input_eg/ 
 
 # Customizing this project
 
@@ -32,3 +25,6 @@ make docker-image
 
 The component can be tested via the test harness.  Refer to https://confluence.semaforprogram.com/display/SEM/Tutorial+2A%3A+Testing+a+Component+With+The+Test+Harness
 
+# Run Project
+- docker run -p port:port -v ~/dir:/mnt   -e COMPONENT_SPEC_FILE='component.yaml' image_id
+- semafor-test-harness probe  --host http://0.0.0.0:port sri.ub.manipulatedobjects ag/ input_eg/ 
