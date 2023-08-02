@@ -1,5 +1,8 @@
 SRI UB Manipulated Object Detector
 
+# Create project
+- make docker-image
+
 
 # Run Project
 - docker run -p port:port -v ~/dir:/mnt   -e COMPONENT_SPEC_FILE='component.yaml' image_id
