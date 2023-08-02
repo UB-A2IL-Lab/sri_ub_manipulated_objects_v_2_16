@@ -1,0 +1,56 @@
+#  .▄▄ · ▄▄▄ .• ▌ ▄ ·.  ▄▄▄· ·▄▄▄      ▄▄▄    #
+#  ▐█ ▀. ▀▄.▀··██ ▐███▪▐█ ▀█ ▐▄▄·▪     ▀▄ █·  #
+#  ▄▀▀▀█▄▐▀▀▪▄▐█ ▌▐▌▐█·▄█▀▀█ ██▪  ▄█▀▄ ▐▀▀▄   #
+#  ▐█▄▪▐█▐█▄▄▌██ ██▌▐█▌▐█ ▪▐▌██▌.▐█▌.▐▌▐█•█▌  #
+#   ▀▀▀▀  ▀▀▀ ▀▀  █▪▀▀▀ ▀  ▀ ▀▀▀  ▀█▄▀▪.▀  ▀  #
+
+# The name of the component.  This should be in the form
+# AAA.BBB.CccCcc Where AAA is the team name (or name of the prime),
+# BBB is the sub, and CccCcc is the component name, in
+# CapitalizedCamelCase.
+COMPONENT_NAME=SRI.UB.ManipulatedObjects
+
+# Some of the tools expect the component name using different
+# formatting conventions.  Take the COMPONENT_NAME value and convert
+# it according to the examples below
+COMPONENT_NAME_DASHIFIED=sri-ub-manipulatedobjects
+COMPONENT_NAME_CAMELCASE=SriUbManipulatedObjects
+
+# The version of the component, incremented at each change. to the
+# source code that contributes to the released docker image.
+COMPONENT_VERSION=0.2.16
+
+# This informs the service library where to look for the component
+# class that implements the abstract SemaforComponent class defined in
+# the toolkit.  This follows the standard python conventions for a
+# fully-qualified class name.  So in the example file below, it would
+# be assumed that the project has a file package/module.py that
+# contains the definition for the ComponentClassName class.
+COMPONENT_CLASS=manipulated_objects.detection.DetectObjects
+
+# All components will have a dependency on the Semafor-Toolkit.  This
+# variable instructs the Docker build engine which version to pull
+# from GitLab.  This should be updated when new releases are made
+TOOLKIT_VERSION=0.4.4
+
+# All components will have a dependency on the Service Library.  This
+# variable instructs the Docker build engine which version to pull
+# from GitLab.  This should be manually updated when new releases are
+# made.
+SERVICE_VERSION=0.4.3
+
+# The docker image repository for the component image.  Do not include
+# a tag in the repo string. One will be added automatically based on
+# COPONENT_CHART_VERSION If the URL for your project is
+# https://gitlab.semaforprogram.com/semafor/integration/component-template
+# then a reasonable value for this field would be as follows.
+COMPONENT_DOCKER_REPO=registry.semaforprogram.com/semafor/teams/ta1/sri/buffalo/sri.ub.manipulatedobjects
+COMPONENT_GIT_REPO=https://gitlab.semaforprogram.com/semafor/teams/ta1/sri/buffalo/sri.ub.manipulatedobjects.git
+
+
+POC_NAME=Abhishek_kumar
+POC_EMAIL=akumar58@buffalo.edu
+
+SIDUTILS_VERSION=0.2.5
+AOMSDK_VERSION=1.1.10
+AAG_GENERATOR_VERSION=0.3.5

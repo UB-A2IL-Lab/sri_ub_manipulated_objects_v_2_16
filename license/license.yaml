@@ -1,0 +1,10 @@
+name: Manipulated Objects Component
+url: https://gitlab.semaforprogram.com/semafor/teams/ta1/sri/buffalo/sri.ub.ManipulatedObjects.git
+
+summary: Component to detect objects in manipulated regions.
+description: |
+  Compinent uses state of the art object detection to detect objects within manipulated regions
+rights: 
+poc:
+  name: Abhishek Kumar
+  email: akumar58@buffalo.edu

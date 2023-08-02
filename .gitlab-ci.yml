@@ -1,0 +1,5 @@
+include: 
+  - project: 'semafor/teams/ta2/lmco/component-testing'
+    ref: master
+    file: '/scripts/component-cicd/.gitlab-ci.yml'
+
